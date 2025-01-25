@@ -1,0 +1,69 @@
+# Python related files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+*.dist-info/
+.eggs/
+build/
+dist/
+pip-wheel-metadata/
+*.manifest
+*.spec
+*.log
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+.python-version
+
+# Django and Flask specific
+*.db
+*.sqlite3
+media/
+staticfiles/
+static/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE and editor-specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+*.orig
+
+# React (Node.js) related files
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# React build artifacts
+build/
+dist/
+.eslintcache
+.cache/
+coverage/
+public/
+.DS_Store
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Miscellaneous
+*.lock
+*.tmp
+*.log
+
+# Explicitly include .env files
+.env
