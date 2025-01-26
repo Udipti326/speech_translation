@@ -1,0 +1,12 @@
+.widget_container button:first-of-type {
+    display: none;
+}
+
+.photo_preview {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo_preview > * {
+    margin: 1rem;
+}

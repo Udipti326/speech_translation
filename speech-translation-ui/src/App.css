@@ -1,0 +1,135 @@
+/* Container to center the stepper on the page */
+.stepper-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  flex-direction: column;
+}
+
+/* Stepper styling */
+.stepper {
+  width: 100%;
+  max-width: 800px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Step content section */
+.step-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Form inputs and file upload */
+.step-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.file-input {
+  margin-bottom: 16px;
+}
+
+.language-input {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Button actions at the bottom */
+.step-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Additional typography styling */
+h6 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.splash-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #000;
+}
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)
+  ),
+  url(./assets/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative;
+}
+
+@media (min-resolution: 192dpi) {
+  .header {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)
+      ),
+      url(./assets/hero.jpg);
+  }
+}
+
+@media (max-width: 37.5em) { /* Assuming 37.5em equals the 'phone' breakpoint */
+  .header {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+      height: 90vh;
+  }
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cloudinary_context {
+  margin-top: 1vh;
+}
+
+.video_preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
